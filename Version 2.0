@@ -1,0 +1,312 @@
+#include <iostream>
+using namespace std;
+
+
+
+void dialogo1 (){
+    int  saudeLadrao = 100;
+    int  danoLadrao = 5;
+    int  defesaLadrao = 10;
+
+    int saudeJogador = 100;
+    int dinheiroJogador = 100;
+    int ataqueJogador = 50;
+    int defesaJogador = 10;
+
+    cout << "Voce e um mago agora" << endl;
+    cout << "Esses sao seus status: \n";
+    cout << "saude: " << saudeJogador << "\ndinheiro: " << dinheiroJogador << "\nataque: " << ataqueJogador << "\ndefesa: " << defesaJogador << endl;
+    cout << "Voce estava na floresta e resolve ir para cidade, chegando la voce resolve explorar um pouco\n";
+    cout << "Voce pode ir em alguns lugares: " << endl;
+    cout << "1- Taverna" << endl;
+    cout << "2- Mercado" << endl;
+    char lugar;
+        cin >> lugar;
+        if (lugar == '1'){
+            cout << "Voce vai ate a taverna, chegando la voce conhece um cara e comeca a conversar com ele" << endl;
+            cout << "Voce: Ola senhor, sou novo por aqui!\n";
+            cout << "Desconhecido: Ola mago, seja bem-vindo! Qual o seu nome?\n";
+            string nome;
+            cin >> nome;
+            cout << "Meu nome e " << nome << endl;
+            cout << "Desconhecido: E um prazer te conhecer! Eu me chamo Barin Gamforj" << endl;
+            cout << "Voce: E um prazer te conhecer Barin Gamforj" << endl;
+            cout << "Gostaria de ver mais sobre Barin Gamforj?" << endl;
+            cout << "1- sim" << endl;
+            cout << "2- nao" << endl;
+            char gamforj;
+            cin >> gamforj;
+            if (gamforj == '1'){
+                cout << "Raca: Anao\nClasse: Artifice\nidade: 137 anos\naltura: 1,30m" << endl;
+                cout << "APARENCIA DELE: Barin Gamforj e um anao de baixa estatura, com aproximadamente 1,30 metros de altura, mas sua presenca e importante. Sua barba e a caracteristica mais marcante: branca como a neve, bem cuidada e dividida em tres grossas trancas, cada  uma adornada com complexos aderecos de metal. Esses aderecos nao sao meros enfeites, mas sim pequenos dispositivos mecanicos que Barin aperfeicoou ao longo dos anos. Seus olhos sao de um azul profundo, cheios de sabedoria e um brilho de curiosidade incessanete. A pele e marcada pelo tempo e pelas fagulhas das forjas, demonstrando anos de dedicacao ao oficio." << endl;
+                cout << "          " << endl;
+                cout << "EQUIPAMENTO DE BARIN: Barin carrega consigo um artefato peculiar: Um canhao de mao que ele mesmo desenvolveu, conhecido como ""Gronthur." "A primeira vista, o Gronthur pode parecer apenas uma exotica, mas nas maos de Barin, ele se transforma em uma ferramenta multifuncional, capaz de disparar projeteis explosivos, lancar redes de contencao ou ate emitir rajadas de energia magica. Este canhao e um verdadeiro testemunho da engenhosidade de Barin, combinando a tradicao ana com a inovacao arcana" << endl;
+                cout << "          " << endl;
+                cout << "PERSONALIDADE: Barin e um anao de espirito inventivo e mente afiada. E meticuloso e perfeccionista, sempre em busca de aprimorar suas criacoes. Seu amor pela engenharia e pela magia o tornou uma figura respeitada tanto entre os artifices quanto entre os anoes. Barin e conhecido por sua paciencia e sua capacidade de resolver problemas complexos com solucoes inovadoras. No entanto, ele pode ser um pouco impaciente com aqueles que nao compartilham de sua paixao pelo oficio, mas nunca hesita em ensinar aqueles que mostram genuino interesse." << endl; 
+                cout << "          " << endl;
+                cout << "COMPANHEIRO: Acompanham-no em suas aventuras uma toupeira de estimacao chamada skyp. Esta toupeira, aparentemente comum, foi aprimorada por Barin com pequenos implantes mecanicos, tornando-a mais rapida e resistente. Skyp e extretamente leal a Barin e desempenha um papel crucial em suas exploracoes subterraneas, sendo capaz de detectar perigos e encontrar minerios raros com seu faro apurado" << endl;
+                cout << "          " << endl;
+                cout << "HISTORIA: Nascido nas profundesas de uma montanha de ferro, Barin foi desde cedo fascinado pelos segredos da forja e pela magia runica dos anoes. Durante sua juventude, estudou sob a tutela dos maiores mestres ferreiros e runicos de seu cla, destacando-se rapidamente devido a a sua habilidad natural e sua determinacao inabalavel. Quando completou seu aprendizado, Barin partiu em uma jornada pelo mundo, buscando novas inspiracoes e tecnologias para incorporar seu trabalho" << endl;
+                cout << "          " << endl;
+                cout << "HABILIDADES E TECNICAS: Como artifice, Barin e um mestre na criacao e no aprimoramento de itens magicos. Ele pode infundir objetos comuns com propriedades magicas temporarias, construir engenhocas complexas e ate reparar itens danificados com uma eficiencia impressionante. Sua expertise em engenharia permite-lhe criar armadilhas engenhosas, dispositivos de defesa e ferramentas utilitarias para qualquer situacao" << endl;
+                cout << "          " << endl;
+                cout << "'Apos conversar um pouco com Barin voce resolve ir procurar um lugar para descansar, entao se despede de Barin...'" << endl;
+                cout << "Voce: Bem, gostei do nosso papo Barin, mas amanha tenho coisas para fazer entao acho melhor eu procurar um lugar para descansar, talvez a gente se veja novamente por ai" << endl;
+                cout << "Barin: Tudo certo Sr. " << nome << "tenha uma otima noite, foi um prazer lhe conhecer" << endl;
+                cout << "'Voce vai ate a estalagem e dorme'" << endl;
+                cout << "'Voce acorda bem cedo e apos tomar cafe voce resolve sair da cidade e ir em direcao ao reino'" << endl;
+                cout << "'Chegando proximo da saida da cidade voce encontra Barin novamente'" << endl;
+                cout << "Voce: Ola de novo, Barin, estou saindo da cidade agora" << endl;
+                cout << "Barin: Ola " << nome << "para onde esta indo?" << endl;
+                cout << "Voce: Estou indo em direcao ao Reino Nordengard" << endl;
+                cout << "Barin: Que coincidencia, eu estaria indo naquela direcao amanha, eu costumo pegar materia prima daquele reino, o rei de la e um grande amigo meu, se quiser esperar posso arrumas uns cavalos e nos vamos juntos." << endl;
+                cout << "Voce quer esperar e ir com Barin? " << endl;
+                cout << "1- Sim\n";
+                cout << "2- nao\n";
+                char esperar;
+                cin >> esperar;
+                if (esperar == '1'){
+                    cout << "Barin: Certo entao amanha ao nascer do sol nos saimos em direcao ao Reino Nordengard" << endl;
+                    cout << "'Barin te acorda e para voces irem em direcao ao Reino Nordengard" << endl;
+                    cout << "'Apos algumas horas de viagem voces chegam bem perto de uma floresta...'" << endl;
+                    cout << "Barin: Ei, " << nome << " vamos precisar tomar cuidado, nessa floresta costuma ter ladroes, se quiser podemos dar a volta nela, mas ficaremos algumas horas a mais viajando, oque voce prefere" << endl;
+                    cout << "Entrar na floresta ou dar a volta?" << endl;
+                    cout << "1- entrar\n";
+                    cout << "2- dar a volta\n";
+                    char escolha;
+                    cin >> escolha;
+                    if(escolha == '1'){
+                        cout << "'Voces entram na floresta'" << endl;
+                        cout << "Barin: CUIDADO! " << nome << ", LADROOES!!!" << endl;
+                        cout << "Esses sao seus status: \n";
+                        cout << "Saude: " << saudeJogador << "\nAtaque: " << ataqueJogador << "\nDefesa: " << defesaJogador << endl;
+                        cout << "Ver status dos Ladroes?\n";
+                        cout << "1- sim\n";
+                        cout << "2- nao\n";
+                        char ladrao;
+                        cin >> ladrao;
+                        if (ladrao == '1'){
+                            cout << "Saude: " << saudeLadrao << "\nDano: " << danoLadrao << "\nDefesa: " << defesaLadrao << endl;
+                         }
+                        cout << "Voces fogem ou lutam?" << endl;
+                        cout << "1- Lutar\n";
+                        cout << "2- fugir\n";
+                        char lutar;
+                        cin >> lutar;
+                        if (lutar == '1'){
+                            cout << "Voces lutam\n" << endl;
+                            saudeJogador -= danoLadrao;
+                            if(saudeJogador <= 0){
+                                cout << "Voce desmaiou, por sorte Barin consegue espantar os ladroes e voces nao morrem\n";
+                                saudeJogador = 5;
+                                cout << "Voce tem novos status: \n";
+                                cout << "Saude: " << saudeJogador << endl;
+                                cout << "Barin: Ei " << nome << " voce ta de boa?";
+                                cout << "Voce: Esses filhos da p*ta! Quase me mataram\n";
+                                cout << "Barin: Voce teve bastante sorte... Bom, ja estamos na frente do reino, melhor entrarmos logo e buscar ajuda!\n";
+                                cout << "'Voces entram no Reino Nordengard'\n";
+                                cout << "Barin: Ei, vamos comprar uma pocao de cura para voce antes que voce piore!\n";
+                                cout << "'Voces vao ate a taverna'\n";
+                                cout << "Atendente: Ola senhores, oque desejam hoje?\n";
+                                cout << "Barin: Uns ladroes quase matam meu amigo... Precisamos de uma pocao de cura.\n";
+                                cout << "Atendente: Claro... Hoje vamos ter a pocao simples, ela esta custando apenas 5 moedas\n";
+                                cout << "Barin: Eu nao tenho dinheiro...\n";
+                                cout << "Voce: Certo... Tome aqui\n";
+                                cout << "'Voce da 5 moedas para Barin'\n";
+                                cout << "'Barin compra a pocao'\n";
+                                dinheiroJogador-= 5;
+                                cout << "'Voce toma a pocao e recupera 50% de sua vida maxima'\n";
+                                saudeJogador = 55;
+                                cout << "Voce tem novos status: \n";
+                                cout << "Saude: " << saudeJogador << "\nDinheiro: " << dinheiroJogador;
+
+                            }
+                        }else {
+                            cout << "Voces conseguem fugir!\n";
+                            cout << "Barin: Ufa! Conseguimos dispistar eles, foi por pouco\n";
+                            cout << "Aqueles filhos da p*ta! Um dia vou esbarrar com eles... Ai eles estao ferrados.\n";
+                            cout << "Barin: Bom, finalmente chegamos no Reino Nordengard!\n";
+                        }
+                    }else {
+                        cout << "Voces dao a volta na floresta em seguranca, mas devido a demora a mais voces chegam de noite!" << endl;
+                        cout << "Barin: Bom, finalmente chegamos no Reino Nordengard, a parte ruim e que vamos ter que nao temos para onde ir pois esta tarde.\n";
+                        cout << "Voce: E... vamos ter que procurar um lugar pra deixar os cavalos e um lugar pra gente dormir, acho que dormir na floresta nao e uma boa ideia\n";
+                    }
+                }
+            }
+        }
+}
+
+int main()
+{
+    int saudeJogador = 100;
+    int dinheiroJogador = 100;
+    int ataqueJogador = 10;
+    int defesaJogador = 50;
+
+    int  saudeLadrao = 100;
+    int  danoLadrao = 5;
+    int  defesaLadrao = 10;
+
+    cout << "Seja bem-vindo sobrevivente, escolha a classe que voce quer jogar: " << endl;
+    cout << "1- Cavaleiro" << endl;
+    cout << "2- Mago" << endl;
+    cout << "3- Arqueiro" << endl;
+    char classe;
+    cin >> classe;
+    if (classe == '1')
+    {
+        cout << "Voce e um cavaleiro agora" << endl;
+        cout << "Esses sao seus status: \n";
+        cout << "saude: " << saudeJogador << "\ndinheiro: " << dinheiroJogador << "\nataque: " << ataqueJogador << "\ndefesa: " << defesaJogador << endl;
+        cout << "Voce estava na floresta e resolve ir para cidade, chegando la voce resolve explorar um pouco\n";
+        cout << "Voce pode ir em alguns lugares: " << endl;
+        cout << "1- Taverna" << endl;
+        cout << "2- Mercado" << endl;
+        char lugar;
+        cin >> lugar;
+        if (lugar == '1')
+        {
+            cout << "Voce vai ate a taverna, chegando la voce conhece um cara e comeca a conversar com ele" << endl;
+            cout << "Voce: Ola senhor, sou novo por aqui!\n";
+            cout << "Desconhecido: Ola cavaleiro, seja bem-vindo! Qual o seu nome?\n";
+            string nome;
+            cin >> nome;
+            cout << "Meu nome e " << nome << endl;
+            cout << "Desconhecido: E um prazer te conhecer! Eu me chamo Barin Gamforj" << endl;
+            cout << "Voce: E um prazer te conhecer Barin Gamforj" << endl;
+            cout << "Gostaria de ver mais sobre Barin Gamforj?" << endl;
+            cout << "1- sim" << endl;
+            cout << "2- nao" << endl;
+            char gamforj;
+            cin >> gamforj;
+            if (gamforj == '1')
+            {
+                cout << "Raca: Anao\nClasse: Artifice\nidade: 137 anos\naltura: 1,30m" << endl;
+                cout << "APARENCIA DELE: Barin Gamforj e um anao de baixa estatura, com aproximadamente 1,30 metros de altura, mas sua presenca e importante. Sua barba e a caracteristica mais marcante: branca como a neve, bem cuidada e dividida em tres grossas trancas, cada  uma adornada com complexos aderecos de metal. Esses aderecos nao sao meros enfeites, mas sim pequenos dispositivos mecanicos que Barin aperfeicoou ao longo dos anos. Seus olhos sao de um azul profundo, cheios de sabedoria e um brilho de curiosidade incessanete. A pele e marcada pelo tempo e pelas fagulhas das forjas, demonstrando anos de dedicacao ao oficio." << endl;
+                cout << "          " << endl;
+                cout << "EQUIPAMENTO DE BARIN: Barin carrega consigo um artefato peculiar: Um canhao de mao que ele mesmo desenvolveu, conhecido como ""Gronthur." "A primeira vista, o Gronthur pode parecer apenas uma exotica, mas nas maos de Barin, ele se transforma em uma ferramenta multifuncional, capaz de disparar projeteis explosivos, lancar redes de contencao ou ate emitir rajadas de energia magica. Este canhao e um verdadeiro testemunho da engenhosidade de Barin, combinando a tradicao ana com a inovacao arcana" << endl;
+                cout << "          " << endl;
+                cout << "PERSONALIDADE: Barin e um anao de espirito inventivo e mente afiada. E meticuloso e perfeccionista, sempre em busca de aprimorar suas criacoes. Seu amor pela engenharia e pela magia o tornou uma figura respeitada tanto entre os artifices quanto entre os anoes. Barin e conhecido por sua paciencia e sua capacidade de resolver problemas complexos com solucoes inovadoras. No entanto, ele pode ser um pouco impaciente com aqueles que nao compartilham de sua paixao pelo oficio, mas nunca hesita em ensinar aqueles que mostram genuino interesse." << endl; 
+                cout << "          " << endl;
+                cout << "COMPANHEIRO: Acompanham-no em suas aventuras uma toupeira de estimacao chamada skyp. Esta toupeira, aparentemente comum, foi aprimorada por Barin com pequenos implantes mecanicos, tornando-a mais rapida e resistente. Skyp e extretamente leal a Barin e desempenha um papel crucial em suas exploracoes subterraneas, sendo capaz de detectar perigos e encontrar minerios raros com seu faro apurado" << endl;
+                cout << "          " << endl;
+                cout << "HISTORIA: Nascido nas profundesas de uma montanha de ferro, Barin foi desde cedo fascinado pelos segredos da forja e pela magia runica dos anoes. Durante sua juventude, estudou sob a tutela dos maiores mestres ferreiros e runicos de seu cla, destacando-se rapidamente devido a a sua habilidad natural e sua determinacao inabalavel. Quando completou seu aprendizado, Barin partiu em uma jornada pelo mundo, buscando novas inspiracoes e tecnologias para incorporar seu trabalho" << endl;
+                cout << "          " << endl;
+                cout << "HABILIDADES E TECNICAS: Como artifice, Barin e um mestre na criacao e no aprimoramento de itens magicos. Ele pode infundir objetos comuns com propriedades magicas temporarias, construir engenhocas complexas e ate reparar itens danificados com uma eficiencia impressionante. Sua expertise em engenharia permite-lhe criar armadilhas engenhosas, dispositivos de defesa e ferramentas utilitarias para qualquer situacao" << endl;
+                cout << "          " << endl;
+                cout << "'Apos conversar um pouco com Barin voce resolve ir procurar um lugar para descansar, entao se despede de Barin...'" << endl;
+                cout << "Voce: Bem, gostei do nosso papo Barin, mas amanha tenho coisas para fazer entao acho melhor eu procurar um lugar para descansar, talvez a gente se veja novamente por ai" << endl;
+                cout << "Barin: Tudo certo Sr. " << nome << "tenha uma otima noite, foi um prazer lhe conhecer" << endl;
+                cout << "'Voce vai ate a estalagem e dorme'" << endl;
+                cout << "'Voce acorda bem cedo e apos tomar cafe voce resolve sair da cidade e ir em direcao ao reino'" << endl;
+                cout << "'Chegando proximo da saida da cidade voce encontra Barin novamente'" << endl;
+                cout << "Voce: Ola de novo, Barin, estou saindo da cidade agora" << endl;
+                cout << "Barin: Ola " << nome << "para onde esta indo?" << endl;
+                cout << "Voce: Estou indo em direcao ao Reino Nordengard" << endl;
+                cout << "Barin: Que coincidencia, eu estaria indo naquela direcao amanha, eu costumo pegar materia prima daquele reino, o rei de la e um grande amigo meu, se quiser esperar posso arrumas uns cavalos e nos vamos juntos." << endl;
+                cout << "Voce quer esperar e ir com Barin? " << endl;
+                cout << "1- Sim\n";
+                cout << "2- nao\n";
+                char esperar;
+                cin >> esperar;
+                if (esperar == '1'){
+                    cout << "Barin: Certo entao amanha ao nascer do sol nos saimos em direcao ao Reino Nordengard" << endl;
+                    cout << "'Barin te acorda e para voces irem em direcao ao Reino Nordengard" << endl;
+                    cout << "'Apos algumas horas de viagem voces chegam bem perto de uma floresta...'" << endl;
+                    cout << "Barin: Ei, " << nome << " vamos precisar tomar cuidado, nessa floresta costuma ter ladroes, se quiser podemos dar a volta nela, mas ficaremos algumas horas a mais viajando, oque voce prefere" << endl;
+                    cout << "Entrar na floresta ou dar a volta?" << endl;
+                    cout << "1- entrar\n";
+                    cout << "2- dar a volta\n";
+                    char escolha;
+                    cin >> escolha;
+                    if(escolha == '1'){
+                        cout << "'Voces entram na floresta'" << endl;
+                        cout << "Barin: CUIDADO! " << nome << ", LADROOES!!!" << endl;
+                        cout << "Esses sao seus status: \n";
+                        cout << "Saude: " << saudeJogador << "\nAtaque: " << ataqueJogador << "\nDefesa: " << defesaJogador << endl;
+                        cout << "Ver status dos Ladroes?\n";
+                        cout << "1- sim\n";
+                        cout << "2- nao\n";
+                        char ladrao;
+                        cin >> ladrao;
+                        if (ladrao == '1'){
+                            cout << "Saude: " << saudeLadrao << "\nDano: " << danoLadrao << "\nDefesa: " << defesaLadrao << endl;
+                         }
+                        cout << "Voces fogem ou lutam?" << endl;
+                        cout << "1- Lutar\n";
+                        cout << "2- fugir\n";
+                        char lutar;
+                        cin >> lutar;
+                        if (lutar == '1'){
+                            cout << "Voces lutam\n" << endl;
+                            saudeJogador -= danoLadrao;
+                            if(saudeJogador <= 0){
+                                cout << "Voce desmaiou, por sorte Barin consegue espantar os ladroes e voces nao morrem\n";
+                                saudeJogador = 5;
+                                cout << "Voce tem novos status: \n";
+                                cout << "Saude: " << saudeJogador << endl;
+                                cout << "Barin: Ei " << nome << " voce ta de boa?";
+                                cout << "Voce: Esses filhos da p*ta! Quase me mataram\n";
+                                cout << "Barin: Voce teve bastante sorte... Bom, ja estamos na frente do reino, melhor entrarmos logo e buscar ajuda!\n";
+                                cout << "'Voces entram no Reino Nordengard'\n";
+                                cout << "Barin: Ei, vamos comprar uma pocao de cura para voce antes que voce piore!\n";
+                                cout << "'Voces vao ate a taverna'\n";
+                                cout << "Atendente: Ola senhores, oque desejam hoje?\n";
+                                cout << "Barin: Uns ladroes quase matam meu amigo... Precisamos de uma pocao de cura.\n";
+                                cout << "Atendente: Claro... Hoje vamos ter a pocao simples, ela esta custando apenas 5 moedas\n";
+                                cout << "Barin: Eu nao tenho dinheiro...\n";
+                                cout << "Voce: Certo... Tome aqui\n";
+                                cout << "'Voce da 5 moedas para Barin'\n";
+                                cout << "'Barin compra a pocao'\n";
+                                dinheiroJogador-= 5;
+                                cout << "'Voce toma a pocao e recupera 50% de sua vida maxima'\n";
+                                saudeJogador = 55;
+                                cout << "Voce tem novos status: \n";
+                                cout << "Saude: " << saudeJogador << "\nDinheiro: " << dinheiroJogador;
+
+                            }else {
+                                cout << "Voces conseguem derrotar os ladroes sem muitos problemas\n";
+                                cout << "Voce tem novos status: \n";
+                                cout << "Saude: " << saudeJogador << endl;
+                                cout << "Barin: Caramba! Foi uma boa luta, felizmente ganhamos hahaha\n";
+                                cout << "Voce: Esses filhos da p*ta! hahaha pelo menos nao vao mais roubar por um bom tempo\n";
+                                cout << "Barin: Bom, finalmente chegamos no Reino Nordengard!\n";
+                            }
+                        }else {
+                            cout << "Voces conseguem fugir!\n";
+                            cout << "Barin: Ufa! Conseguimos dispistar eles, foi por pouco\n";
+                            cout << "Aqueles filhos da p*ta! Um dia vou esbarrar com eles... Ai eles estao ferrados.\n";
+                            cout << "Barin: Bom, finalmente chegamos no Reino Nordengard!\n";
+                        }
+                    }else {
+                        cout << "Voces dao a volta na floresta em seguranca, mas devido a demora a mais voces chegam de noite!" << endl;
+                        cout << "Barin: Bom, finalmente chegamos no Reino Nordengard, a parte ruim e que vamos ter que nao temos para onde ir pois esta tarde.\n";
+                        cout << "Voce: E... vamos ter que procurar um lugar pra deixar os cavalos e um lugar pra gente dormir, acho que dormir na floresta nao e uma boa ideia\n";
+                    }
+                }else {
+                    cout << "Barin: Okay, boa sorte na sua jornada "  << nome << " Se precisar de algo la e so citar meu nome!" << endl;
+                }
+            }
+            else
+            {
+                cout << "Voce continua a conversar com Barin ate o dono da taverna resolver fechar";
+            }
+        }
+        else
+        {
+            cout << "Voce vai ate o mercado, mas nao acha nada" << endl;
+        }
+    }
+    else if (classe == '2')
+    {
+        cout << "Voce e um mago agora" << endl;
+        dialogo1();
+    }
+    else
+    {
+        cout << "Voce e um arqueiro agora" << endl;
+    }
+
+    return 0;
+}
